@@ -1,0 +1,54 @@
+{
+    "name": "sphamster/classification-metrics",
+    "description": "PHP package to compute confusion matrices and classification metrics",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrea Civita",
+            "email": "andreacivita994@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^8.1"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "pestphp/pest": "^3.8",
+        "laravel/pint": "^1.24",
+        "rector/rector": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sphamster\\ClassificationMetrics\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "pint",
+        "refactor": "rector",
+        "pre-commit": [
+            "@refactor",
+            "@lint"
+        ],
+        "test:refactor": "rector --dry-run",
+        "test:lint": "pint --test",
+        "test:types": "phpstan analyse --ansi",
+        "test:unit": "pest",
+        "test": [
+            "@test:refactor",
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ]
+    }
+}
