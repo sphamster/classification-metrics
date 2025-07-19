@@ -90,7 +90,7 @@ jobs:
               uses: codecov/codecov-action@v5
               with:
                   token: ${{ secrets.CODECOV_TOKEN }}
-                  slug: sphamster/bayes
+                  slug: sphamster/classification-metrics
                   files: coverage.xml
 
     test-aggregate:
