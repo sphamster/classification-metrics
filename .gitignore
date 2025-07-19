@@ -1,3 +1,6 @@
 vendor/
 .idea/
 .DS_Store
+coverage.xml
+coverage-report/
+.phpunit.cache
