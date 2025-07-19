@@ -1,8 +1,11 @@
 # Classification Metrics for PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sphamster/classification-metrics.svg?style=flat-square)](https://packagist.org/packages/sphamster/classification-metrics)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/sphamster/classification-metrics/pull-request.yml?branch=master&label=tests&style=flat-square)](https://github.com/sphamster/classification-metrics/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![PHP Version](https://img.shields.io/packagist/php-v/sphamster/classification-metrics.svg?style=flat-square)](composer.json)
+[![PHP Version](https://img.shields.io/packagist/dependency-v/sphamster/classification-metrics/php.svg?style=flat-square)](composer.json)
+[![PHPStan Level](https://img.shields.io/badge/PHPStan-level%209-brightgreen.svg?style=flat-square)](https://phpstan.org/)
+[![Code Coverage](https://img.shields.io/codecov/c/github/sphamster/classification-metrics?style=flat-square)](https://codecov.io/gh/sphamster/classification-metrics)
 
 A PHP package for computing confusion matrices and classification metrics for machine learning models.
 
